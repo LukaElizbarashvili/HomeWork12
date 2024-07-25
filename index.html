@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="./Css/style.css">
 </head>
 <body>
+        <!-- Mainc Container -->
     <div class="container">
+        <!-- This is the Header -->
         <header>
             <a href="">
                 <img src="./Images/logo plant.svg" alt="Web Logo">
@@ -36,17 +38,44 @@
             </div>
 
         </header>
+        <!-- This is the main Section -->
         <section class=MainSection>
             <section class="SecondarySection">
                 <h3>CONTACT US</h3>
                 <article>
-                <form action="">
+                <form action="" name="form">
                  <div class="FirstPart">
-                    <input type="text" placeholder="Name" class="FirstInputs">
-                    <input type="email" placeholder="Email" class="FirstInputs">
+                    <input type="text" placeholder="Name" class="FirstInputs" name="NAME" id="name">
+                    <input type="email" placeholder="Email" class="FirstInputs" name="EMAIL" id="email">
                  </div>
-
-
+                    <article class="RadioConainer">
+                        <h4>I have a delivery question about my order</h4>
+                        <div class="RaioBox">
+                           <input type="radio" name="Questions" id="LostOrder" value="LostOrder">
+                           <label for="LostOrder">I did not receive my order</label>
+                        </div>
+                        <div class="RaioBox">
+                           <input type="radio" name="Questions" id="InctorrectOrder" value="InctorrectOrder">
+                           <label for="InctorrectOrder">My order is incorrect or arrived damaged</label>
+                        </div>
+                        <div class="RaioBox">
+                           <input type="radio" name="Questions" id="Cancelation" value="Cancelation">
+                           <label for="Cancelation">Cancel my order</label>
+                        </div>
+                        <div class="RaioBox">
+                           <input type="radio" name="Questions" id="Change_Addres" value="Change_Addres">
+                           <label for="Change_Addres">Change my shipping address</label>
+                        </div>
+                    </article>
+                    <article class="TextBoxContainer">
+                        <h4>Please provide more details below.</h4>
+                        <textarea name="Message" id="message" placeholder="Message"></textarea>
+                    </article>
+                    <article class="CheckBoxContainer">
+                        <input type="checkbox" name="News" id="NewsPaper" value="receive">
+                        <label for="NewsPaper">I want to receive the newsletter </label>
+                    </article>
+                    <button type="submit" class="Submit_Button">SEND</button>
                 </form>
 
                 </article>
